@@ -16,3 +16,19 @@ Fue una petición con los operadores habilitados para una busqueda premium v1.1.
 
 Hay mucha información cruzada respecto a la búqueda en el archivo histórico y la api de twitter, si con el tiempo se mejora el código intentaré actualizarlo, 
 de momento este funciona a efectos de obtener los tweets. 
+
+# Datos de query
+
+Para que correspondiesen los requerimientos seleccionados para el corpus de los tuits a utilizar y los parámetros de búsqueda que ofrece Tweepy, se organizó la petición a la API de Twitter de la siguiente forma:
+
+· **Query**: corresponde a las características específicas de la búsqueda. En este caso se evidencian los siguientes elementos:
+
+    o #YoMeQuedoEnCasa: hashtag seleccionado a buscar dentro de los tuits.
+
+    o lang=”es”: búsqueda de tuits que estuviesen únicamente en español.
+
+    o Point_radius="-34.602730,-58.438790,20km": geolocalización de los tuits en unas coordenadas específicas con un radio que abarcase la Ciudad Autónoma de Buenos Aires y Provincia de Buenos Aires, Argentina.
+
+· **fromDate="202003200000"**: Rango de tiempo en el que se inicia la extracción de tuits, es decir, desde el 20 de marzo del 2020 a las 00:00 horas
+
+· **toDate="202003262359"**: Rango de tiempo en el que termina la extracción de tuits, es decir, hasta el 26 de marzo del 2020 a las 23:59 horas.
